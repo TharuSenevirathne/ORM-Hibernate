@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+
+    <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate?createDatabaseIfNotExist=true</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">Ijse@1234</property>
+
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+    <property name="hibernate.show_sql">true</property>
+
+
+    <!-- schema eka thibunath nathath hdgnnw -->
+    <!-- DB schema will be updated if needed meka important -->
+    <property name="hibernate.hbm2ddl.auto">update</property>  <!-- value ekt create dammoth run krn warayak warayak pasa table eke data lost wenw eka nisa update eka dila thiynn-->
+
+
+    <!-- <property name="hibernate.hbm2ddl.auto">create-drop</property> -->
+    <!-- run wenkn witharai database eka thiyn inne, run weddi create krgnnw nathara weddi drop krl dnw -->
+
+    <!-- <property name="hibernate.hbm2ddl.auto">validate</property> -->
+    <!-- Entity database ekai match wenwd blnwd . waradi nn match naththn exception ekk throw krnw-->
+
+  </session-factory>
+</hibernate-configuration>
